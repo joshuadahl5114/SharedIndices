@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6A573716753D4B8B87B6BED5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5B12251CB2AB47978BFFAAF4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				9050B332EA9E42A5BB193E32 /* CMake Rules */,
+			);
+			dependencies = (
+				1FFF8FA2365A4CEF8D77A09D /* PBXTargetDependency */,
+				6F9DEA48572F4F1E9EE182C6 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		7E4F517A1E7042389D3D38DF /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E3436C3DE68A4611BBD492B0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				285DA8E56F754CF7A933BB75 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		46A459E14E1941C2A3BFC443 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29D57610D99C4672B8CB0A5F /* main.cpp */; };
+		E496118724AD819600CA1030 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496118624AD819600CA1030 /* OpenGL.framework */; };
+		E496118924AD829200CA1030 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = E496118824AD829200CA1030 /* glew.c */; };
+		E496118B24AD82B200CA1030 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E496118A24AD82B200CA1030 /* libglfw3.a */; };
+		E496118D24AD89D700CA1030 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496118C24AD89D700CA1030 /* Cocoa.framework */; };
+		E496118F24AD89E000CA1030 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496118E24AD89E000CA1030 /* QuartzCore.framework */; };
+		E496119124AD89EB00CA1030 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496119024AD89EB00CA1030 /* IOKit.framework */; };
+		E496119324AD913100CA1030 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496119224AD913100CA1030 /* SDL.framework */; };
+		E496119624AD917F00CA1030 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E496119524AD917F00CA1030 /* SDLMain.m */; };
+		FAEE153AE0A649999B4E78CB /* example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94DBB9209F7347CBB6762F86 /* example.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F638ACC525E47D3A66CAB3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC153CCF07E34844B19FE428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E4F517A1E7042389D3D38DF;
+			remoteInfo = ZERO_CHECK;
+		};
+		CB71ABEF49F64E4EA0D0EF5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC153CCF07E34844B19FE428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86BD600DDE414A909C82E012;
+			remoteInfo = shared_vertices;
+		};
+		E8E6A852304643E9B2E999E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC153CCF07E34844B19FE428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E4F517A1E7042389D3D38DF;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29D57610D99C4672B8CB0A5F /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		9465A3137F8A4ACE869D34A3 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		94DBB9209F7347CBB6762F86 /* example.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = example.cpp; path = src/example.cpp; sourceTree = SOURCE_ROOT; };
+		D81EF83B90E14FC5AD7F328D /* shared_vertices */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = shared_vertices; sourceTree = BUILT_PRODUCTS_DIR; };
+		E496118624AD819600CA1030 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E496118824AD829200CA1030 /* glew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glew.c; path = source/common/thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
+		E496118A24AD82B200CA1030 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = platforms/osx/libglfw3.a; sourceTree = "<group>"; };
+		E496118C24AD89D700CA1030 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E496118E24AD89E000CA1030 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E496119024AD89EB00CA1030 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E496119224AD913100CA1030 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		E496119424AD915C00CA1030 /* devel-lite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "devel-lite"; sourceTree = "<group>"; };
+		E496119524AD917F00CA1030 /* SDLMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = "devel-lite/SDLMain.m"; sourceTree = "<group>"; };
+		FB892CB91AAB430793B110F4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E496118424AD816600CA1030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E496119324AD913100CA1030 /* SDL.framework in Frameworks */,
+				E496119124AD89EB00CA1030 /* IOKit.framework in Frameworks */,
+				E496118F24AD89E000CA1030 /* QuartzCore.framework in Frameworks */,
+				E496118D24AD89D700CA1030 /* Cocoa.framework in Frameworks */,
+				E496118B24AD82B200CA1030 /* libglfw3.a in Frameworks */,
+				E496118724AD819600CA1030 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ABDB77C569E45C2BAEF3858 = {
+			isa = PBXGroup;
+			children = (
+				E496119524AD917F00CA1030 /* SDLMain.m */,
+				E496119424AD915C00CA1030 /* devel-lite */,
+				E496118824AD829200CA1030 /* glew.c */,
+				E9E1235D19B44B3192991197 /* shared_vertices */,
+				3FCF492B5A0843DCB3D24162 /* ALL_BUILD */,
+				57A53B6DE3B64CD4A1B62E50 /* Products */,
+				E496118524AD819500CA1030 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B4333F59FC244D0B9912D15 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3FCF492B5A0843DCB3D24162 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				3B4333F59FC244D0B9912D15 /* CMake Rules */,
+				9465A3137F8A4ACE869D34A3 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		57A53B6DE3B64CD4A1B62E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D81EF83B90E14FC5AD7F328D /* shared_vertices */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3BA65E98DB744659D727C5A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				94DBB9209F7347CBB6762F86 /* example.cpp */,
+				29D57610D99C4672B8CB0A5F /* main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E496118524AD819500CA1030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E496119224AD913100CA1030 /* SDL.framework */,
+				E496119024AD89EB00CA1030 /* IOKit.framework */,
+				E496118E24AD89E000CA1030 /* QuartzCore.framework */,
+				E496118C24AD89D700CA1030 /* Cocoa.framework */,
+				E496118A24AD82B200CA1030 /* libglfw3.a */,
+				E496118624AD819600CA1030 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9E1235D19B44B3192991197 /* shared_vertices */ = {
+			isa = PBXGroup;
+			children = (
+				B3BA65E98DB744659D727C5A /* Source Files */,
+				FB892CB91AAB430793B110F4 /* CMakeLists.txt */,
+			);
+			name = shared_vertices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86BD600DDE414A909C82E012 /* shared_vertices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E0B528ED8D4D63BBCEFAD0 /* Build configuration list for PBXNativeTarget "shared_vertices" */;
+			buildPhases = (
+				68FFD7EE793843DD9AB030C8 /* Sources */,
+				E496118424AD816600CA1030 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFB3552B5124C64841BB2AA /* PBXTargetDependency */,
+			);
+			name = shared_vertices;
+			productName = shared_vertices;
+			productReference = D81EF83B90E14FC5AD7F328D /* shared_vertices */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC153CCF07E34844B19FE428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = 95B32C1AA8E643D9BABAE0BB /* Build configuration list for PBXProject "shared_vertices" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0ABDB77C569E45C2BAEF3858;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A573716753D4B8B87B6BED5 /* ALL_BUILD */,
+				7E4F517A1E7042389D3D38DF /* ZERO_CHECK */,
+				86BD600DDE414A909C82E012 /* shared_vertices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		285DA8E56F754CF7A933BB75 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_3/shared_vertices -f /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_3/shared_vertices/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		9050B332EA9E42A5BB193E32 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_3/shared_vertices -f /Users/joshuadahl/Desktop/Tools/OpenGL\\ Book\\ Examples/chapter_3/shared_vertices/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68FFD7EE793843DD9AB030C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E496119624AD917F00CA1030 /* SDLMain.m in Sources */,
+				E496118924AD829200CA1030 /* glew.c in Sources */,
+				FAEE153AE0A649999B4E78CB /* example.cpp in Sources */,
+				46A459E14E1941C2A3BFC443 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FFF8FA2365A4CEF8D77A09D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E4F517A1E7042389D3D38DF /* ZERO_CHECK */;
+			targetProxy = E8E6A852304643E9B2E999E5 /* PBXContainerItemProxy */;
+		};
+		6F9DEA48572F4F1E9EE182C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86BD600DDE414A909C82E012 /* shared_vertices */;
+			targetProxy = CB71ABEF49F64E4EA0D0EF5B /* PBXContainerItemProxy */;
+		};
+		BCFB3552B5124C64841BB2AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E4F517A1E7042389D3D38DF /* ZERO_CHECK */;
+			targetProxy = 6F638ACC525E47D3A66CAB3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B781662F43A45DEB9B467CB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		0E91C725B09E450F87A351D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		1B9F178F00AA4D59831A0077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/build";
+			};
+			name = Release;
+		};
+		39CE1C552CF84A0D8EBB0E63 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/include\"",
+					"\"$(PROJECT_DIR)/source/common/thirdparty\"/**",
+					/Library/Frameworks/SDL.framework/Headers,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = shared_vertices;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		3FF05DF64E674A60B0C9B5A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		571F9B6B26F3473ABB7F0730 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		5E8B073BCD4843ED90F6D257 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/build";
+			};
+			name = MinSizeRel;
+		};
+		611C6C98E06941F1A1770649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/include\"",
+					"\"$(PROJECT_DIR)/source/common/thirdparty\"/**",
+					/Library/Frameworks/SDL.framework/Headers,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = shared_vertices;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		75F5B542EA09489D94BD5C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		8B70F3092F3D4ECCB1910B3B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/include\"",
+					"\"$(PROJECT_DIR)/source/common/thirdparty\"/**",
+					/Library/Frameworks/SDL.framework/Headers,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = shared_vertices;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		B335EF7F32C04918ADBEB8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		B95769C63E0E4C4D94CC401F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/include\"",
+					"\"$(PROJECT_DIR)/source/common/thirdparty\"/**",
+					/Library/Frameworks/SDL.framework/Headers,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/lib\"",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = shared_vertices;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		C4701BDBB2FB42899A73D5C5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		CAEF633874D8440582154562 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		D8422DD0847849D781C4E341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/build";
+			};
+			name = Debug;
+		};
+		EA253D87EE9E49E69526901F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/joshuadahl/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/build";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B12251CB2AB47978BFFAAF4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B335EF7F32C04918ADBEB8EE /* Debug */,
+				3FF05DF64E674A60B0C9B5A0 /* Release */,
+				0B781662F43A45DEB9B467CB /* MinSizeRel */,
+				C4701BDBB2FB42899A73D5C5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95B32C1AA8E643D9BABAE0BB /* Build configuration list for PBXProject "shared_vertices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8422DD0847849D781C4E341 /* Debug */,
+				1B9F178F00AA4D59831A0077 /* Release */,
+				5E8B073BCD4843ED90F6D257 /* MinSizeRel */,
+				EA253D87EE9E49E69526901F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E3436C3DE68A4611BBD492B0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F5B542EA09489D94BD5C60 /* Debug */,
+				0E91C725B09E450F87A351D3 /* Release */,
+				571F9B6B26F3473ABB7F0730 /* MinSizeRel */,
+				CAEF633874D8440582154562 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9E0B528ED8D4D63BBCEFAD0 /* Build configuration list for PBXNativeTarget "shared_vertices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95769C63E0E4C4D94CC401F /* Debug */,
+				611C6C98E06941F1A1770649 /* Release */,
+				8B70F3092F3D4ECCB1910B3B /* MinSizeRel */,
+				39CE1C552CF84A0D8EBB0E63 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC153CCF07E34844B19FE428 /* Project object */;
+}

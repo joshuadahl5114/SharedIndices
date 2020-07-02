@@ -1,0 +1,3 @@
+/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/CMakeFiles/shared_vertices.dir
+/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/CMakeFiles/ALL_BUILD.dir
+/Users/joshuadahl/Desktop/Tools/OpenGL Book Examples/chapter_3/shared_vertices/CMakeFiles/ZERO_CHECK.dir
